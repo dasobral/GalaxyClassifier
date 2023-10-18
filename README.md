@@ -6,7 +6,7 @@ The Galaxy Zoo Classifier is a framework to build, compile and train deep learni
 
 For practical reasons, I am not including here the datasets used for model training and model testing. You can find the relevant galaxy images at the webpage of the Galaxy Zoo Kaggle challenge.
 
-[The Galaxy Challenge](https://www.google.com](https://www.kaggle.com/competitions/galaxy-zoo-the-galaxy-challenge/data)
+[The Galaxy Challenge](https://www.kaggle.com/competitions/galaxy-zoo-the-galaxy-challenge/data)
 
 ## Setup
 Before using the Galaxy Zoo Classifier, it is recommended to set up a Conda environment with TensorFlow. This ensures that the necessary dependencies are isolated and managed efficiently. Here are the steps to set up the environment:
