@@ -2,7 +2,11 @@
 # Galaxy Zoo Classifier
 
 ## Overview
-The Galaxy Zoo Classifier is a framework to build, compile and train deep learning models designed to classify galaxies based on their images. It uses convolutional neural network (CNN) architectures to learn and predict the classes of galaxies.
+The Galaxy Zoo Classifier is a framework to build, compile and train deep learning models designed to classify galaxies based on their images. It uses convolutional neural network (CNN) architectures to learn and predict the classes of galaxies. While this was the original aim of the project for which I developed the code, it could serve as a more general framework for .jpg images classification with CNNs.
+
+For practical reasons, I am not including here the datasets used for model training and model testing. You can find the relevant galaxy images at the webpage of the Galaxy Zoo Kaggle challenge.
+
+[The Galaxy Challenge](https://www.google.com](https://www.kaggle.com/competitions/galaxy-zoo-the-galaxy-challenge/data)
 
 ## Setup
 Before using the Galaxy Zoo Classifier, it is recommended to set up a Conda environment with TensorFlow. This ensures that the necessary dependencies are isolated and managed efficiently. Here are the steps to set up the environment:
