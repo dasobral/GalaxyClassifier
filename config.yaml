@@ -1,0 +1,53 @@
+paths: 
+  images_path : 'galaxy-zoo_data/images_training_rev1/'
+  labels_path : 'galaxy-zoo_data/training_solutions_rev1.csv'
+  plots_path : 'metrics_plots/'
+  models_path : 'saved_models/'
+
+data_preprocessing:
+  task : 2
+  min : 0.5
+  one_hot_labels : False
+  crop : True
+  crop_size : 256 
+  img_size : [64, 64]
+  normalize : True
+  grayscale : False
+  training_size : 0.80 
+  test_size : 0.2
+
+model_name : 'Base_ModelII_regression'
+
+model_params:
+  model_type : 'base'
+  conv_layers : [[32, [3,3]], [64, [3,3]], [128, [3,3]]]
+  dense_units : [256, 128]
+  batch_normalization : False 
+  activation : 'relu'
+  pool_size : [2, 2]
+  flattening : 'Flatten'
+  class_weights : False
+  out_activation : 'sigmoid'
+  dropout_rate : 0.25
+  max_out : True
+  early_stop_patience : 15
+  monitor : 'val_loss'
+  
+data_augmentation_params: 
+  rotation_range : 90
+  width_shift_range : 0.01
+  height_shift_range : 0.01
+  horizontal_flip : True
+  vertical_flip : True
+  shear_range : 0.015
+  zoom_range : 0.15
+  #fill_mode : 'nearest' 
+
+train_params:
+  learning_rate : 0.001
+  loss_function : 'mean_squared_error'
+  metrics : ['mse', 'accuracy']
+  batch_size : 100
+  epochs : 150
+  threshold : 0.0
+  take_weights_log : True
